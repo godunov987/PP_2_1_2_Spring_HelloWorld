@@ -7,8 +7,15 @@ public class AppConfig {
  
     @Bean(name="helloworld")
     public HelloWorld getHelloWorld() {
-        HelloWorld helloWorld = new HelloWorld();
+        HelloWorld helloWorld = new HelloWorld("helloworld");
         helloWorld.setMessage("Hello World!");
         return helloWorld;
+    }
+    @Bean(name="cat")
+    @Scope("prototype")
+    public Cat getCat(){
+        Cat cat = new Cat("cat");
+        cat.setMessage("Hello cay!");
+        return cat;
     }
 }

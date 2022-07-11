@@ -1,5 +1,5 @@
-public class HelloWorld {
-    public HelloWorld(String message) {
+public class Cat {
+    public Cat(String message) {
         this.message = message;
     }
 
@@ -8,9 +8,14 @@ public class HelloWorld {
     public String getMessage() {
         return message;
     }
- 
+
     public void setMessage(String message) {
         this.message = message;
     }
-     
 }
+
+
+
+
+
+
